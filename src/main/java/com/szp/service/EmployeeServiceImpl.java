@@ -48,6 +48,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public List<Day> getDaysFromMonth(int employeeId, int month, int year) {
+		int intzmianne;
 		Employee employee = getEmployeeById(employeeId);
 		List<Day> days = new ArrayList<>();
 		for(Day d : employee.getDays()) {
